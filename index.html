@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/bootswatch.css">
 
     <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
         .navbar {
             background-color: rgba(255, 255, 255, 0.8);
         }
@@ -34,6 +38,24 @@
         .menu-item img {
             max-width: 88%;
             height: auto;
+        }
+
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .col-md-4 img {
+            width: 100%;
+            height: auto;
+            border-radius: 50px;
+        }
+
+        #price {
+            font-style: italic;
         }
 
         footer {
@@ -62,17 +84,16 @@
                     </li>
                     <!-- Dropdown menu for Menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        <a class="nav-link dropdown-toggle" href="#section1" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Menu
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#cakes">Cakes</a></li>
-                            <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
                             <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                            <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+                            <li><a class="dropdown-item" href="#cakes">Cakes</a></li>
                         </ul>
                     </li>
-                    <!-- End of dropdown menu -->
                     <li class="nav-item">
                         <a class="nav-link" href="#section2">About</a>
                     </li>
@@ -90,6 +111,131 @@
         <div class="container">
             <h1>Welcome to Our Beautiful Restaurant</h1>
             <p>We serve delicious food with passion in a delightful ambiance.</p>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="section1" class="section">
+        <div class="container">
+            <h2>MENU</h2>
+            <h3 id="desserts"><strong>Desserts</strong></h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./img/Cheesecake Crescent Rolls.jpg" alt="Desserts 1">
+                    <h3>Cheesecake Crescent Rolls</h3>
+                    <p id="price">Price: 1700AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Rose tart.jpg" alt="Desserts 2">
+                    <h3>Rose Tart</h3>
+                    <p id="price">Price: Price: 2000AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/BEST Brownies.jpg" alt="Desserts 3">
+                    <h3>BEST Brownies</h3>
+                    <p id="price">Price: Price: 1300AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Pancake-Teig.jpg" alt="Desserts 1">
+                    <h3>Pancake-Teig</h3>
+                    <p id="price">Price: Price: 1400AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Italian Tiramisu.jpg" alt="Desserts 2">
+                    <h3>Italian Tiramisu</h3>
+                    <p id="price">Price: Price: 1500AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Blueberry Sauce.jpg" alt="Desserts 3">
+                    <h3>Blueberry Sauce</h3>
+                    <p id="price">Price: Price: 1500AMD</p>
+                </div>
+
+
+
+                <h3 id="drinks"><strong>Drinks</strong></h3>
+                <div class="col-md-4">
+                    <img src="./img/Tahini Chocolate Coffee.jpg" alt="Drinks 4">
+                    <h3>Tahini Chocolate Coffee</h3>
+                    <p id="price">Price: 2100AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Matcha Bubble Tea.jpg" alt="Drinks 5">
+                    <h3>Matcha Bubble Tea</h3>
+                    <p id="price">Price: 1700AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Blueberry Lavender Lemonade.jpg" alt="Drinks 6">
+                    <h3>Blueberry Lavender Lemonade</h3>
+                    <p id="price">Price: 2000AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Iced Vanilla Latte.jpg" alt="Drinks 4">
+                    <h3>Iced Vanilla Latte</h3>
+                    <p id="price">Price: 1400AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Strawberry Bubble Tea.jpg" alt="Drinks 5">
+                    <h3>Strawberry Bubble Tea</h3>
+                    <p id="price">Price: 1700AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Peach Thyme Iced Tea.jpg" alt="Drinks 6">
+                    <h3>Peach Thyme Iced Tea</h3>
+                    <p id="price">Price: 1500AMD</p>
+                </div>
+
+
+
+
+                <h3 id="cakes"><strong>Cakes</strong></h3>
+                <div class="col-md-4">
+                    <img src="./img/Strawberry Waffle Cakes.jpg" alt="Cake 4">
+                    <h3>Strawberry Waffle Cakes</h3>
+                    <p id="price">Price: 3000AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Cheesecake.jpg" alt="Cake 5">
+                    <h3>Cheesecake</h3>
+                    <p id="price">Price: 3300AMD</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Strawberry Cake.jpg" alt="Cake 6">
+                    <h3>Strawberry Cake</h3>
+                    <p id="price">Price: 3500AMD</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- About -->
+    <section id="section2" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./img/cover.jpg" class="img-fluid" alt="Restaurant Image">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>Welcome to Sugar Bliss Café, your haven for exquisite cakes in Armenia. We
+                        specialize in crafting delicious cakes that are both desserts and edible works of art.
+
+                        Our menu features a variety of flavors, from classic chocolate fudge to adventurous lemon
+                        raspberry.
+                        Each cake is made with the finest ingredients and a touch of passion, ensuring a memorable
+                        experience
+                        with every slice.
+
+                        Join us for a delightful treat paired with gourmet coffees, teas, or a glass of fine wine in our
+                        cozy
+                        atmosphere. Whether you're celebrating or simply satisfying a sweet craving, Sugar Bliss Café
+                        promises
+                        to make every moment sweeter.
+
+                        Indulge. Celebrate. Enjoy the sweet life at Sugar Bliss Café.
+
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
